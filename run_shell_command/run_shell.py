@@ -6,7 +6,6 @@
 import subprocess
 
 cmd = 'ls -lh'
-
 result = subprocess.Popen(cmd,shell=True,stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 error = result.stderr.readlines()
 output = result.stdout.readlines()
